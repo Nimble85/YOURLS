@@ -11,7 +11,7 @@ apt-get install git ansible docker.io -y
 
 git clone https://github.com/nimble85/YOURLS.git
 
-cd yourltest-
+cd YOURLS
 
 В env.yours в переменной YOURLS_SITE прописываем реальное доменное имя , также в Makefile 127.0.0.1 меняем на реальное доменное имя
 
