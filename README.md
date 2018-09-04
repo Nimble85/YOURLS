@@ -8,7 +8,7 @@
 
 apt-get install git ansible docker.io -y
 
-git clone https://github.com/nimble85/YOURLS-.git
+git clone https://github.com/nimble85/YOURLS.git
 
 cd yourltest-
 
