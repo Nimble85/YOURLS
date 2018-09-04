@@ -1,14 +1,23 @@
-# YOURLS
- #Create folder, download and unpack code
- 
-  mkdir /var/www/yourls
-  cd /var/www/yourls
-    git clone https://github.com/YOURLS/YOURLS/archive/1.7.tar.gz
-    tar -zxvf 1.7.tar.gz 
-    mv YOURLS-1.7/ yourls
-    
- #Create conf file Apache
-    
-   sudo nano /etc/apache2/sites-available/yourls.conf
-   
-   
+Тестовое задание DevOps
+
+Часть 1.
+
+Заскриптовать установку/настройку сервиса сокращения ссылок https://yourls.org с помощю docker-compose
+
+Установка:
+
+apt-get install git ansible docker.io -y
+
+git clone https://github.com/nimble85/cutter-.git
+
+cd yourltest-
+
+В env.yours в переменной YOURLS_SITE прописываем реальное доменное имя , также в Makefile 127.0.0.1 меняем на реальное доменное имя
+
+ansible-playbook -i hosts ans.yaml --connection=local
+
+docker-compose up -d
+
+Часть 2.
+
+make shorturl URL=http://yourls.org/33
