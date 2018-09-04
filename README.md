@@ -5,6 +5,7 @@
 Заскриптовать установку/настройку сервиса сокращения ссылок https://yourls.org с помощю docker-compose
 
 Установка:
+apt-get update
 
 apt-get install git ansible docker.io -y
 
